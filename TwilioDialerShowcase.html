@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Neura Dialer Showcase</title>
+    <link rel="stylesheet" href="TwilioDialerShowcase.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="dialer-showcase">
+      <!-- Back Navigation -->
+      <div class="back-navigation">
+        <a class="back-btn" id="backBtn" href="https://haidersajjad.site"
+          >← Back to Portfolio</a
+        >
+      </div>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Neura Dialer</h1>
+            <h2>Enterprise-Grade Call Center Solution</h2>
+            <p>
+              Transform your business communication with our modern, scalable
+              dialer system. Built with cutting-edge technology for call
+              centers, sales teams, and customer service organizations.
+            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">Uptime</span>
+              </div>
+              <!-- <div class="stat">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Organizations</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">10M+</span>
+                <span class="stat-label">Calls Handled</span>
+              </div> -->
+            </div>
+            <div class="hero-buttons">
+              <!-- <button class="btn-primary" id="startTrialBtn">
+                Start Free Trial
+              </button> -->
+              <button class="btn-secondary" id="viewDemoBtn">View</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="login.png" alt="Dialer Dashboard" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Tabs -->
+      <nav class="showcase-nav">
+        <div class="nav-container" id="navTabs">
+          <button class="nav-tab active" data-tab="overview">
+            <span class="tab-icon">📊</span>
+            <span class="tab-label">Overview</span>
+          </button>
+          <button class="nav-tab" data-tab="features">
+            <span class="tab-icon">⭐</span>
+            <span class="tab-label">Features</span>
+          </button>
+          <button class="nav-tab" data-tab="demo">
+            <span class="tab-icon">🖼️</span>
+            <span class="tab-label">Screenshots</span>
+          </button>
+          <button class="nav-tab" data-tab="technology">
+            <span class="tab-icon">⚡</span>
+            <span class="tab-label">Technology</span>
+          </button>
+          <!-- <button class="nav-tab" data-tab="pricing">
+            <span class="tab-icon">💰</span>
+            <span class="tab-label">Pricing</span>
+          </button> -->
+        </div>
+      </nav>
+
+      <!-- Content Sections -->
+      <div class="showcase-content">
+        <!-- Overview Tab -->
+        <section class="content-section" data-content="overview">
+          <div class="section-header">
+            <h2>Complete Call Center Solution</h2>
+            <p>
+              Everything you need to manage your call center operations
+              efficiently
+            </p>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card">
+              <div class="card-icon">👥</div>
+              <h3>Agent Management</h3>
+              <p>
+                Comprehensive user management with role-based permissions,
+                activity tracking, and performance analytics.
+              </p>
+              <ul>
+                <li>Multi-role user system</li>
+                <li>Real-time agent status</li>
+                <li>Performance tracking</li>
+                <li>Shift management</li>
+              </ul>
+            </div>
+            <div class="overview-card">
+              <div class="card-icon">📞</div>
+              <h3>Smart Dialing</h3>
+              <p>
+                Advanced dialing features with call recording, analytics, and
+                seamless Twilio integration.
+              </p>
+              <ul>
+                <li>One-click dialing</li>
+                <li>Call recording & playback</li>
+                <li>International calling</li>
+                <li>Call routing & forwarding</li>
+              </ul>
+            </div>
+            <div class="overview-card">
+              <div class="card-icon">📊</div>
+              <h3>Analytics & Reporting</h3>
+              <p>
+                Detailed insights into call performance, agent productivity, and
+                business metrics.
+              </p>
+              <ul>
+                <li>Real-time dashboards</li>
+                <li>Custom reports</li>
+                <li>Performance metrics</li>
+                <li>Export capabilities</li>
+              </ul>
+            </div>
+            <div class="overview-card">
+              <div class="card-icon">🔒</div>
+              <h3>Enterprise Security</h3>
+              <p>
+                Bank-level security with encrypted data, secure authentication,
+                and compliance features.
+              </p>
+              <ul>
+                <li>JWT authentication</li>
+                <li>Data encryption</li>
+                <li>GDPR compliance</li>
+                <li>Audit trails</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Features Tab -->
+        <section
+          class="content-section"
+          data-content="features"
+          style="display: none"
+        >
+          <div class="section-header">
+            <h2>Powerful Features</h2>
+            <p>
+              Built for modern call centers with enterprise-grade capabilities
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Admin Dashboard</h3>
+              <p>Complete user management, analytics, and system monitoring</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📞</div>
+              <h3>Professional Dialer</h3>
+              <p>One-click dialing with call recording and history</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔐</div>
+              <h3>Enterprise Security</h3>
+              <p>JWT authentication, role-based access, and data encryption</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👥</div>
+              <h3>Multi-Tenant</h3>
+              <p>Support for multiple organizations with data isolation</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3>Responsive Design</h3>
+              <p>Works perfectly on desktop, tablet, and mobile devices</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Real-time Updates</h3>
+              <p>Live call status, notifications, and activity monitoring</p>
+            </div>
+          </div>
+          <div class="features-detailed">
+            <div class="feature-detail reverse">
+              <div class="feature-detail-image">
+                <img src="adminpanel.png" alt="Admin Dashboard" />
+              </div>
+              <div class="feature-detail-content">
+                <h3>Complete Admin Control</h3>
+                <ul>
+                  <li>
+                    👤 <strong>User Management:</strong> Create, edit, and
+                    manage all users
+                  </li>
+                  <li>
+                    🏢 <strong>Organization Setup:</strong> Multi-tenant
+                    architecture
+                  </li>
+                  <li>
+                    📊 <strong>Real-time Monitoring:</strong> Live agent status
+                    and call metrics
+                  </li>
+                  <li>
+                    ⚙️ <strong>System Configuration:</strong> Customize settings
+                    and preferences
+                  </li>
+                  <li>
+                    ⚙️ <strong>Device-Dependent Admin Access:</strong> Platform
+                    admin login is protected by device fingerprinting for
+                    enhanced security
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-detail">
+              <div class="feature-detail-content">
+                <h3>Advanced Call Management</h3>
+                <ul>
+                  <li>
+                    📞 <strong>One-Click Dialing:</strong> Instant calling with
+                    number validation
+                  </li>
+                  <li>
+                    🎙️ <strong>Call Recording:</strong> Automatic recording with
+                    secure storage
+                  </li>
+                  <li>
+                    📋 <strong>Call History:</strong> Comprehensive logs with
+                    search and filter
+                  </li>
+                  <li>
+                    🔄 <strong>Call Transfer:</strong> Seamless call routing
+                    between agents
+                  </li>
+                  <li>
+                    🌍 <strong>International Support:</strong> Global calling
+                    with competitive rates
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-detail-image">
+                <img src="dialer.png" alt="Call Management" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Screenshots Tab -->
+        <section
+          class="content-section"
+          data-content="demo"
+          style="display: none"
+        >
+          <div class="section-header">
+            <h2>See It In Action</h2>
+            <p>
+              Explore the user interface and experience the power of our dialer
+            </p>
+          </div>
+          <div class="screenshots-gallery">
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="adminpanel.png" alt="Platform Admin Panel" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Platform Admin Panel</h3>
+                <p>
+                  Comprehensive organization management and system configuration
+                </p>
+              </div>
+            </div>
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="ownerdash.png" alt="Owner Dashboard" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Owner Dashboard</h3>
+                <p>
+                  Clean, intuitive owner dashboard with real-time statistics and
+                  quick actions
+                </p>
+              </div>
+            </div>
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="admindash.png" alt="Admin Dashboard" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Admin Dashboard</h3>
+                <p>
+                  Clean, intuitive admin dashboard with real-time statistics and
+                  quick actions
+                </p>
+              </div>
+            </div>
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="agentdash.png" alt="Agent Dashboard" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Agent Dashboard</h3>
+                <p>
+                  Clean, intuitive agent dashboard with real-time statistics and
+                  quick actions
+                </p>
+              </div>
+            </div>
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="dialer.png" alt="Dialer Interface" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Dialer Interface</h3>
+                <p>
+                  Professional dialing interface with call controls and history
+                </p>
+              </div>
+            </div>
+            <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="reports.png" alt="Call Analytics" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Call Analytics</h3>
+                <p>Detailed call reports and performance analytics</p>
+              </div>
+            </div>
+            <!-- <div class="screenshot-card">
+              <div class="screenshot-image">
+                <img src="dialer.png" alt="Mobile View" />
+                <div class="screenshot-overlay">
+                  <button class="view-full">🔍 View Full Size</button>
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Mobile View</h3>
+                <p>Fully responsive design optimized for mobile devices</p>
+              </div>
+            </div> -->
+          </div>
+          <!-- <div class="demo-features">
+            <h3>Interactive Demo Available</h3>
+            <p>
+              Experience the full functionality with our live demo environment
+            </p>
+            <div class="demo-buttons">
+              <button class="btn-primary" id="requestDemoBtn">
+                Request Live Demo
+              </button>
+              <button class="btn-secondary">View Video Demo</button>
+            </div>
+          </div> -->
+        </section>
+        <!-- Technology Tab -->
+        <section
+          class="content-section"
+          data-content="technology"
+          style="display: none"
+        >
+          <div class="section-header">
+            <h2>Built with Modern Technology</h2>
+            <p>
+              Leveraging the latest technologies for performance, scalability,
+              and reliability
+            </p>
+          </div>
+          <div class="tech-stack">
+            <div class="tech-card">
+              <div class="tech-icon">⚛️</div>
+              <h3>React.js</h3>
+              <p>Modern frontend framework</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">🟢</div>
+              <h3>Node.js</h3>
+              <p>Scalable backend runtime</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">🌐</div>
+              <h3>Express.js</h3>
+              <p>Minimal and flexible Node.js web framework</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">🍃</div>
+              <h3>MongoDB</h3>
+              <p>Flexible NoSQL database</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">📞</div>
+              <h3>Twilio API</h3>
+              <p>Enterprise voice services</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">🔐</div>
+              <h3>JWT Auth</h3>
+              <p>Secure authentication</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">🔄</div>
+              <h3>WebSocket</h3>
+              <p>Real-time communication</p>
+            </div>
+          </div>
+          <div class="architecture-section">
+            <h3>System Architecture</h3>
+            <div class="architecture-diagram">
+              <div class="arch-layer">
+                <h4>Frontend Layer</h4>
+                <div class="arch-components">
+                  <span>React.js</span>
+                  <span>Responsive UI</span>
+                  <span>Real-time Updates</span>
+                </div>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-layer">
+                <h4>API Layer</h4>
+                <div class="arch-components">
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>JWT Auth</span>
+                </div>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-layer">
+                <h4>Data Layer</h4>
+                <div class="arch-components">
+                  <span>MongoDB</span>
+                  <span>Twilio API</span>
+                  <span>Cloud Storage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-benefits">
+            <h3>Technical Advantages</h3>
+            <div class="benefits-grid">
+              <div class="benefit">
+                <h4>🚀 High Performance</h4>
+                <p>
+                  Optimized for handling thousands of concurrent calls with
+                  minimal latency
+                </p>
+              </div>
+              <div class="benefit">
+                <h4>📈 Scalable</h4>
+                <p>
+                  Horizontal scaling to support growing call volumes and user
+                  base
+                </p>
+              </div>
+              <div class="benefit">
+                <h4>🔒 Secure</h4>
+                <p>
+                  Enterprise-grade security with encryption and compliance
+                  standards
+                </p>
+              </div>
+              <div class="benefit">
+                <h4>🔧 Maintainable</h4>
+                <p>
+                  Clean, modular code architecture for easy updates and
+                  customization
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pricing Tab -->
+        <!-- <section
+          class="content-section"
+          data-content="pricing"
+          style="display: none"
+        >
+          <div class="section-header">
+            <h2>Choose Your Plan</h2>
+            <p>Flexible pricing options for organizations of all sizes</p>
+          </div>
+          <div class="pricing-grid">
+            <div class="pricing-card" data-plan="starter">
+              <div class="plan-header">
+                <h3>Starter</h3>
+                <div class="plan-price">
+                  <span class="price">$299</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Perfect for small call centers</p>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>✓ Up to 10 agents</li>
+                  <li>✓ Basic call analytics</li>
+                  <li>✓ Standard support</li>
+                  <li>✓ Call recording (30 days)</li>
+                  <li>✓ Mobile app access</li>
+                  <li>✓ Basic integrations</li>
+                </ul>
+              </div>
+              <button class="plan-button btn-secondary" data-plan-btn="starter">
+                Get Started
+              </button>
+            </div>
+            <div class="pricing-card popular" data-plan="professional">
+              <div class="popular-badge">Most Popular</div>
+              <div class="plan-header">
+                <h3>Professional</h3>
+                <div class="plan-price">
+                  <span class="price">$599</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Ideal for growing businesses</p>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>✓ Up to 50 agents</li>
+                  <li>✓ Advanced analytics & reporting</li>
+                  <li>✓ Priority support</li>
+                  <li>✓ Call recording (90 days)</li>
+                  <li>✓ Mobile app access</li>
+                  <li>✓ Advanced integrations</li>
+                  <li>✓ Custom branding</li>
+                  <li>✓ API access</li>
+                </ul>
+              </div>
+              <button
+                class="plan-button btn-primary"
+                data-plan-btn="professional"
+              >
+                Get Started
+              </button>
+            </div>
+            <div class="pricing-card" data-plan="enterprise">
+              <div class="plan-header">
+                <h3>Enterprise</h3>
+                <div class="plan-price">
+                  <span class="price">$1,299</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">For large organizations</p>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>✓ Unlimited agents</li>
+                  <li>✓ Real-time analytics</li>
+                  <li>✓ 24/7 dedicated support</li>
+                  <li>✓ Unlimited call recording</li>
+                  <li>✓ Mobile app access</li>
+                  <li>✓ Full API access</li>
+                  <li>✓ White-label solution</li>
+                  <li>✓ Custom integrations</li>
+                  <li>✓ SLA guarantee</li>
+                  <li>✓ On-premise deployment</li>
+                </ul>
+              </div>
+              <button
+                class="plan-button btn-secondary"
+                data-plan-btn="enterprise"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="pricing-footer">
+            <div class="pricing-note">
+              <h3>🎯 Custom Enterprise Solutions</h3>
+              <p>
+                Need a tailored solution? We offer custom development,
+                on-premise deployment, and dedicated support for large
+                enterprises.
+              </p>
+              <button class="btn-outline" id="customQuoteBtn">
+                Contact for Custom Quote
+              </button>
+            </div>
+            <div class="pricing-guarantee">
+              <h4>💯 Our Guarantee</h4>
+              <ul>
+                <li>✅ 30-day free trial</li>
+                <li>✅ 99.9% uptime SLA</li>
+                <li>✅ 24/7 technical support</li>
+                <li>✅ No setup fees</li>
+                <li>✅ Cancel anytime</li>
+              </ul>
+            </div>
+          </div>
+        </section> -->
+      </div>
+
+      <!-- Contact Form Modal -->
+      <div class="modal-overlay" id="contactModal" style="display: none">
+        <div class="contact-modal" onclick="event.stopPropagation()">
+          <div class="modal-header">
+            <h2>Get Started Today</h2>
+            <button class="close-btn" id="closeModalBtn">×</button>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" name="company" />
+            </div>
+            <!-- <div class="form-group">
+              <label>Interested Plan</label>
+              <select name="plan">
+                <option value="starter">Starter - $299/month</option>
+                <option value="professional">Professional - $599/month</option>
+                <option value="enterprise">Enterprise - $1,299/month</option>
+                <option value="custom">Custom Solution</option>
+              </select>
+            </div> -->
+            <div class="form-group">
+              <label>Additional Requirements</label>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Tell us about your specific needs, number of agents, expected call volume, etc."
+              ></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="btn-primary">Send</button>
+              <button type="button" class="btn-secondary" id="cancelModalBtn">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer CTA -->
+      <section class="cta-section">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Call Center?</h2>
+          <!-- <p>
+            Join hundreds of organizations already using our professional dialer
+            solution
+          </p> -->
+          <div class="cta-buttons">
+            <!-- <button class="btn-primary large" id="footerTrialBtn">
+              Contact Us
+            </button> -->
+            <!-- <button class="btn-outline large">Schedule a Demo</button> -->
+          </div>
+          <div class="cta-contact">
+            <p>
+              Questions? Contact us at <strong>hsaattock@gmail.com</strong> or
+              <strong>+92 315 0145266</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Force scroll to top immediately when script loads
+      if (history.scrollRestoration) {
+        history.scrollRestoration = "manual";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Start from top instantly to prevent flash
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+
+        // Then smooth scroll to top after a brief delay
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        }, 100);
+
+        // Your existing JavaScript code continues here...
+      });
+      // Wrap everything in DOMContentLoaded to ensure elements exist
+      document.addEventListener("DOMContentLoaded", function () {
+        // Tab switching
+        document.querySelectorAll(".nav-tab").forEach((tab) => {
+          tab.addEventListener("click", function () {
+            document
+              .querySelectorAll(".nav-tab")
+              .forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+            const tabId = this.getAttribute("data-tab");
+            document.querySelectorAll(".content-section").forEach((section) => {
+              if (section.getAttribute("data-content") === tabId) {
+                section.style.display = "";
+              } else {
+                section.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Modal functions
+        function openContactModal(plan) {
+          document.getElementById("contactModal").style.display = "flex";
+          if (plan) {
+            const planSelect = document.querySelector(
+              '#contactModal select[name="plan"]'
+            );
+            if (planSelect) {
+              planSelect.value = plan;
+            }
+          }
+        }
+
+        function closeContactModal() {
+          document.getElementById("contactModal").style.display = "none";
+          document.getElementById("contactForm").reset();
+        }
+
+        // Modal event listeners with null checks
+        const footerTrialBtn = document.getElementById("footerTrialBtn");
+        if (footerTrialBtn) {
+          footerTrialBtn.onclick = () => openContactModal("professional");
+        }
+
+        const requestDemoBtn = document.getElementById("requestDemoBtn");
+        if (requestDemoBtn) {
+          requestDemoBtn.onclick = () => openContactModal("professional");
+        }
+
+        const customQuoteBtn = document.getElementById("customQuoteBtn");
+        if (customQuoteBtn) {
+          customQuoteBtn.onclick = () => openContactModal("custom");
+        }
+
+        // Plan buttons
+        document.querySelectorAll("[data-plan-btn]").forEach((btn) => {
+          btn.onclick = () =>
+            openContactModal(btn.getAttribute("data-plan-btn"));
+        });
+
+        // Modal close buttons
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        if (closeModalBtn) {
+          closeModalBtn.onclick = closeContactModal;
+        }
+
+        const cancelModalBtn = document.getElementById("cancelModalBtn");
+        if (cancelModalBtn) {
+          cancelModalBtn.onclick = closeContactModal;
+        }
+
+        const contactModal = document.getElementById("contactModal");
+        if (contactModal) {
+          contactModal.onclick = function (e) {
+            if (e.target === this) closeContactModal();
+          };
+        }
+
+        // Contact form submit
+        const contactForm = document.getElementById("contactForm");
+        if (contactForm) {
+          contactForm.onsubmit = function (e) {
+            e.preventDefault();
+            alert("Thank you! We will contact you within 24 hours.");
+            closeContactModal();
+          };
+        }
+
+        // View button switches to screenshots tab and scrolls
+        const viewDemoBtn = document.getElementById("viewDemoBtn");
+        if (viewDemoBtn) {
+          viewDemoBtn.onclick = function () {
+            const screenshotsTab = document.querySelector(
+              '.nav-tab[data-tab="demo"]'
+            );
+            if (screenshotsTab) {
+              screenshotsTab.click();
+
+              // Scroll to the screenshots section after tab switch
+              setTimeout(() => {
+                const screenshotsSection = document.querySelector(
+                  '[data-content="demo"]'
+                );
+                if (screenshotsSection) {
+                  screenshotsSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }, 100); // Small delay to ensure tab content is visible
+            }
+          };
+        }
+      });
+      // Full-size image viewer functionality
+      document.querySelectorAll(".view-full").forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          // Get the image source from the parent screenshot card
+          const screenshotCard = this.closest(".screenshot-card");
+          const img = screenshotCard.querySelector("img");
+          const imgSrc = img.src;
+          const imgAlt = img.alt;
+          // Create full-size image modal
+          createImageModal(imgSrc, imgAlt);
+        });
+      });
+
+      // Function to create and show full-size image modal
+      function createImageModal(imgSrc, imgAlt) {
+        // Remove existing modal if any
+        const existingModal = document.getElementById("imageModal");
+        if (existingModal) {
+          existingModal.remove();
+        }
+        // Create modal HTML
+        const modalHTML = `
+          <div class="image-modal-overlay" id="imageModal">
+            <div class="image-modal-content">
+              <button class="image-modal-close">&times;</button>
+              <img src="${imgSrc}" alt="${imgAlt}" class="full-size-image">
+              <div class="image-modal-caption">${imgAlt}</div>
+            </div>
+          </div>
+        `;
+        // Add to body
+        document.body.insertAdjacentHTML("beforeend", modalHTML);
+        // Add event listeners
+        const modal = document.getElementById("imageModal");
+        const closeBtn = modal.querySelector(".image-modal-close");
+        // Close modal events
+        closeBtn.addEventListener("click", () => modal.remove());
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) modal.remove();
+        });
+        // Close on escape key
+        document.addEventListener("keydown", function escHandler(e) {
+          if (e.key === "Escape") {
+            modal.remove();
+            document.removeEventListener("keydown", escHandler);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
