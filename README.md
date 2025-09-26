@@ -75,5 +75,3 @@ Add a license file (e.g., `LICENSE`) to this repository if you want to publish i
 For questions or updates, contact the project owner.
 
 ---
-
-*Generated and added by your local workspace assistant.*
