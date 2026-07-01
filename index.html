@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
     <div class="dialer-showcase">
       <!-- Back Navigation -->
       <div class="back-navigation">
-        <a class="back-btn" id="backBtn" href="https://haidersajjad.site"
+        <a class="back-btn" id="backBtn" href="https://haidersajjad.com"
           >← Back to Portfolio</a
         >
       </div>
@@ -679,7 +679,7 @@
           </div>
           <div class="cta-contact">
             <p>
-              Questions? Contact us at <strong>hsaattock@gmail.com</strong> or
+              Questions? Contact us at <strong>me@haidersajjad.com</strong> or
               <strong>+92 315 0145266</strong>
             </p>
           </div>
@@ -733,7 +733,7 @@
           document.getElementById("contactModal").style.display = "flex";
           if (plan) {
             const planSelect = document.querySelector(
-              '#contactModal select[name="plan"]'
+              '#contactModal select[name="plan"]',
             );
             if (planSelect) {
               planSelect.value = plan;
@@ -801,7 +801,7 @@
         if (viewDemoBtn) {
           viewDemoBtn.onclick = function () {
             const screenshotsTab = document.querySelector(
-              '.nav-tab[data-tab="demo"]'
+              '.nav-tab[data-tab="demo"]',
             );
             if (screenshotsTab) {
               screenshotsTab.click();
@@ -809,7 +809,7 @@
               // Scroll to the screenshots section after tab switch
               setTimeout(() => {
                 const screenshotsSection = document.querySelector(
-                  '[data-content="demo"]'
+                  '[data-content="demo"]',
                 );
                 if (screenshotsSection) {
                   screenshotsSection.scrollIntoView({
